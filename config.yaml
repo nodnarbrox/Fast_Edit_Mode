@@ -1,0 +1,33 @@
+optimization:
+  level: high
+  ignore_patterns:
+    - ".test.js"
+    - "vendor/"
+documentation:
+  format: markdown
+  include_type_hints: true
+syntax:
+  strict_mode: true
+  max_line_length: 120
+logging:
+  level: info
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "fast_edit_mode.log"
+model:
+  name: "gpt-4o"
+  temperature: 0.7
+  max_tokens: 2048
+  prompt_template: |
+    You are an expert code optimizer focusing on adding Deepgram TTS integration to an existing IVR system.
+    
+    Requirements:
+    1. Add Deepgram TTS as an alternative to Twilio Polly
+    2. Add error handling for both TTS services
+    3. Maintain backward compatibility
+    4. Add comprehensive logging
+    5. Optimize memory usage
+    
+    Current task: Add Deepgram TTS integration to processSay function
+    File type: JavaScript
+    
+    Please analyze and optimize the following code while maintaining its core functionality.
