@@ -32,7 +32,7 @@ Fast Edit Mode is an intelligent code editing and optimization tool designed to 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/fast-edit-mode.git
+git clone https://github.com/nodnarbrox/Fast_Edit_Mode.git
 cd fast-edit-mode
 ```
 
