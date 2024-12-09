@@ -1,11 +1,6 @@
 # Fast Edit Mode
-cd "C:\path_to_project directory" ; python "C:path_to_\fast_edit_mode\scripts\run_fast_edit.py" -fix --config fast_edit_mode/config.yaml functions/ivrFlow.js functions/ivrFlow_edited.js
 
 
-step 1: edit the config.yaml file according to your project structure and requirements.\
-step 2: run the command: cd "C:\\path_to_project directory" ; python "C:\\path_to_\\fast_edit_mode\\scripts\\run_fast_edit.py" -fix --config fast\_edit\_mode/config.yaml functions/ivrFlow.js functions/ivrFlow\_edited.js
-
-example of actual command cd "C:\Users\USERNAME\Desktop\build\Sonivo - Ai SAAS call center - v1\upload_this" ; python "C:\Users\USERNAME\Desktop\build\fast_edit_mode\scripts\run_fast_edit.py" -fix --config fast_edit_mode/config.yaml functions/ivrFlow.js functions/ivrFlow_edited.js
 ## Overview
 Fast Edit Mode is an intelligent code editing and optimization tool designed to assist developers in improving and refactoring their code. The tool leverages multiple AI agents to provide comprehensive code analysis, documentation, and optimization capabilities.
 
@@ -42,7 +37,10 @@ pip install -e .
 ```
 
 ## Usage Examples
+step 1: edit the config.yaml file according to your project structure and requirements.\
+step 2: run the command: cd "C:\\path_to_project directory" ; python "C:\\path_to_\\fast_edit_mode\\scripts\\run_fast_edit.py" -fix --config fast\_edit\_mode/config.yaml functions/ivrFlow.js functions/ivrFlow\_edited.js
 
+example of actual command cd "C:\Users\USERNAME\Desktop\build\Sonivo - Ai SAAS call center - v1\upload_this" ; python "C:\Users\USERNAME\Desktop\build\fast_edit_mode\scripts\run_fast_edit.py" -fix --config fast_edit_mode/config.yaml functions/ivrFlow.js functions/ivrFlow_edited.js
 ### Basic Command Usage
 ```bash
 # Run the main script
