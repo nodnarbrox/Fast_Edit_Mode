@@ -1,0 +1,22 @@
+# config.yaml
+
+token_limit: 2048
+overlap_tokens: 100
+model:
+  name: "gpt-4o-mini"
+  temperature: 0.2
+logging:
+  level: "INFO"
+  file: "fast_edit_mode.log"
+placeholder_pattern: "// rest of code here"
+supported_file_types:
+  - ".py"
+  - ".js"
+  - ".java"
+  - ".cpp"
+  - ".json"
+  - ".xml"
+  - ".md"
+  - ".txt"
+  - ".conf"
+checkpoint_dir: "checkpoints"
