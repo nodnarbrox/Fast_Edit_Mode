@@ -38,7 +38,7 @@ pip install -e .
 
 ## Usage Examples
 step 1: edit the config.yaml file according to your project structure and requirements.\
-step 2: run the command: cd "C:\\path_to_project directory" ; python "C:\\path_to_\\fast_edit_mode\\scripts\\run_fast_edit.py" -fix --config fast\_edit\_mode/config.yaml functions/ivrFlow.js functions/ivrFlow\_edited.js
+step 2: run the command: cd "C:\\path_to_project directory" ; python "C:\\path_to_\\fast_edit_mode\\scripts\\run_fast_edit.py" -fix --config fast\_edit\_mode/config.yaml file_to_edit.js edited_file.js
 
 example of actual command cd "C:\Users\USERNAME\Desktop\build\Sonivo - Ai SAAS call center - v1\upload_this" ; python "C:\Users\USERNAME\Desktop\build\fast_edit_mode\scripts\run_fast_edit.py" -fix --config fast_edit_mode/config.yaml functions/ivrFlow.js functions/ivrFlow_edited.js
 ### Basic Command Usage
