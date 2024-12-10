@@ -42,7 +42,7 @@ Fast Edit Mode is an advanced web-based code processing platform that leverages 
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/fast-edit-mode.git
+git clone https://github.com/nodnarbrox/Fast_Edit_Mode.git
 cd fast-edit-mode
 
 # Create virtual environment
