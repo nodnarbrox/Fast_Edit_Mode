@@ -1,137 +1,95 @@
-# Fast Edit Mode
+# Fast Edit Mode: Intelligent Code Processing Web Application
 
+## 🚀 Project Overview
 
-## Overview
-Fast Edit Mode is an intelligent code editing and optimization tool designed to assist developers in improving and refactoring their code. The tool leverages multiple AI agents to provide comprehensive code analysis, documentation, and optimization capabilities.
+Fast Edit Mode is an advanced web-based code processing platform that leverages AI technologies to enhance, optimize, and refactor code across multiple programming languages.
 
-## Project Structure
-- `fast_edit_mode/`: Core package directory
-  - `agent.py`: Base agent class
-  - `ai_interface.py`: Interface for AI interactions
-  - `documentation_agent.py`: Agent for generating documentation
-  - `optimization_agent.py`: Agent for code optimization
-  - `orchestrator.py`: Coordinates different agents
-  - `refactoring_agent.py`: Agent for code refactoring
-  - `syntax_agent.py`: Agent for syntax analysis
-  - `utils.py`: Utility functions
-  - `config.yaml`: Configuration file
+## ✨ Features
 
-- `scripts/`: Utility scripts
-  - `run_fast_edit.py`: Script to run the tool
+### 🔍 Intelligent Code Analysis
+- Multi-language support (Python, JavaScript, Java, C++, and more)
+- AI-powered code improvement
+- Syntax correction and optimization
+- Automatic documentation generation
 
-## Prerequisites
+### 🔒 Security
+- CSRF protection
+- Rate limiting
+- Secure file uploads
+- Environment-based configuration
+
+### 💻 Web Interface
+- Responsive, modern design
+- Drag-and-drop file upload
+- Real-time processing status
+- Downloadable processed files
+
+## 🛠 Technology Stack
+- Flask
+- OpenAI API
+- WTForms
+- Flask-Limiter
+- Modern JavaScript
+- Responsive CSS
+
+## 📦 Prerequisites
 - Python 3.8+
-- pip package manager
+- pip
+- OpenAI API Key
 
-## Installation
+## 🚀 Quick Start
 
-1. Clone the repository:
+### Installation
 ```bash
-git clone https://github.com/nodnarbrox/Fast_Edit_Mode.git
+# Clone the repository
+git clone https://github.com/yourusername/fast-edit-mode.git
 cd fast-edit-mode
+
+# Create virtual environment
+python -m venv .venv
+source .venv/bin/activate  # Unix/macOS
+.venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-2. Install the package:
+### Configuration
+1. Create `.env` file
+2. Add your OpenAI API key
+```
+OPENAI_API_KEY=your_api_key_here
+```
+
+### Running the Application
 ```bash
-pip install -e .
+# Unix/macOS
+./deploy.sh
+
+# Windows
+deploy.bat
 ```
 
-## Usage Examples
-step 1: edit the config.yaml file according to your project structure and requirements.\
-step 2: run the command: cd "C:\\path_to_project directory" ; python "C:\\path_to_\\fast_edit_mode\\scripts\\run_fast_edit.py" -fix --config fast\_edit\_mode/config.yaml file_to_edit.js edited_file.js
+## 🔧 Deployment Options
+- Local development server
+- Production WSGI servers (Gunicorn, uWSGI)
+- Docker containerization
 
-example of actual command cd "C:\Users\USERNAME\Desktop\build\Sonivo - Ai SAAS call center - v1\upload_this" ; python "C:\Users\USERNAME\Desktop\build\fast_edit_mode\scripts\run_fast_edit.py" -fix --config fast_edit_mode/config.yaml functions/ivrFlow.js functions/ivrFlow_edited.js
-### Basic Command Usage
-```bash
-# Run the main script
-python scripts/run_fast_edit.py
-
-# Optimize a specific Python file
-python scripts/run_fast_edit.py --optimize path/to/your/script.py
-
-# Generate documentation for a file
-python scripts/run_fast_edit.py --document path/to/your/script.py
-
-# Perform syntax analysis
-python scripts/run_fast_edit.py --syntax-check path/to/your/script.py
-
-# Refactor code
-python scripts/run_fast_edit.py --refactor path/to/your/script.py
-```
-
-### Advanced Usage
-```bash
-# Run multiple operations on a file
-python scripts/run_fast_edit.py --optimize --document --syntax-check path/to/your/script.py
-
-# Specify custom configuration
-python scripts/run_fast_edit.py --config custom_config.yaml path/to/your/script.py
-
-# Verbose output mode
-python scripts/run_fast_edit.py --verbose path/to/your/script.py
-```
-
-## Configuration Examples
-In `fast_edit_mode/config.yaml`:
-```yaml
-# Example configuration
-optimization:
-  level: high
-  ignore_patterns:
-    - ".test.js"
-    - "vendor/"
-documentation:
-  format: markdown
-  include_type_hints: true
-syntax:
-  strict_mode: true
-  max_line_length: 120
-logging:
-  level: info
-  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-  file: "fast_edit_mode.log"
-model:
-  name: "gpt-4o"
-  temperature: 0.7
-  max_tokens: 2048
-  prompt_template: |
-    You are an expert code optimizer focusing on adding Deepgram TTS integration to an existing IVR system.
-    
-    Requirements:
-    1. Add Deepgram TTS as an alternative to Twilio Polly
-    2. Add error handling for both TTS services
-    3. Maintain backward compatibility
-    4. Add comprehensive logging
-    5. Optimize memory usage
-    
-    Current task: Add Deepgram TTS integration to processSay function
-    File type: JavaScript
-    
-    Please analyze and optimize the following code while maintaining its core functionality.
-
-```
-
-## Features
-- Code Optimization
-- Syntax Analysis
-- Documentation Generation
-- Code Refactoring
-
-## Troubleshooting
-- Ensure you have the latest version of Python
-- Check that all dependencies are installed
-- Verify your configuration file syntax
-- Use the `--verbose` flag for detailed error messages
-
-## Contributing
+## 🤝 Contributing
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-## License
-[Specify your license here]
+## 📄 License
+MIT License
 
-## Contact
-[Your contact information or project maintainer's details]
+## 🌟 Support
+Open an issue on GitHub for bug reports or feature requests.
+
+## 🔮 Future Roadmap
+- Enhanced AI models
+- More programming language support
+- Advanced code analysis features
+- Machine learning-based suggestions
